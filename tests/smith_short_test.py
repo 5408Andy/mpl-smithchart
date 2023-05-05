@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
-
 import sys
 
 import numpy as np
-from mpl_smithchart import rcParams, pyplot as pp
+from smithplot import SmithAxes
+
+from mpl_smithchart import pyplot as pp
+from mpl_smithchart import rcParams
 
 rcParams.update({"legend.numpoints": 3})
 
 sys.path.append("..")
-from smithplot import SmithAxes
 
 # sample data
 data = np.loadtxt("data/s11.csv", delimiter=",", skiprows=1)[::100]

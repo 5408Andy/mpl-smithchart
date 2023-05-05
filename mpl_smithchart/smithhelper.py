@@ -1,7 +1,5 @@
-# -*- coding: utf-8 -*-
 # last edit: 11.04.2018
-
-from collections import Iterable
+from collections.abc import Iterable
 
 import numpy as np
 
@@ -29,7 +27,9 @@ def xy_to_z(*xy):
         else:
             z = x + 1j * y
     else:
-        raise ValueError("Arguments are not valid - specify either complex number/vector z or real and imaginary number/vector x, y")
+        raise ValueError(
+            "Arguments are not valid - specify either complex number/vector z or real and imaginary number/vector x, y",
+        )
 
     return z
 
