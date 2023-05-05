@@ -3,7 +3,7 @@
 import sys
 
 import numpy as np
-from matplotlib import rcParams, pyplot as pp
+from mpl_smithchart import rcParams, pyplot as pp
 
 rcParams.update({"legend.numpoints": 3})
 

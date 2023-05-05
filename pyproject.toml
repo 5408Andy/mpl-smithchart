@@ -1,0 +1,30 @@
+[tool.pdm]
+
+[project]
+name = "mpt-smithchart"
+description = "An extension for matplotlib providing a projection class to generate high quality Smith Chart plots."
+authors = [
+    {name = "Paul Staerke", email = "paul.staerke@gmail.com"},
+    {name = "Spencer Chang", email = "spencer@sycee.xyz"},
+]
+dependencies = [
+    "matplotlib>=1.2",
+    "numpy>=1.21.1",
+    "scipy>=1.6.1",
+]
+requires-python = ">=3.7"
+readme = "README.md"
+license = {text = "BSD"}
+dynamic = [
+    "version",
+]
+
+[project.urls]
+repository = "https://github.com/schang412/mpt-smithchart"
+
+[tool.setuptools_scm]
+write_to = "mpl_smithchart/_version.py"
+
+[build-system]
+requires = ["setuptools>=61", "setuptools_scm[toml]>=6.2", "wheel"]
+build-backend = "setuptools.build_meta"

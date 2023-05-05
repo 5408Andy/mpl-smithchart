@@ -11,8 +11,8 @@ import numpy as np
 from matplotlib import rcParams, pyplot as pp
 
 sys.path.append("..")
-from smithplot.smithaxes import SmithAxes
-from smithplot import smithhelper
+from mpl_smithchart.smithaxes import SmithAxes
+from mpl_smithchart import smithhelper
 
 rcParams.update({"legend.numpoints": 3,
                  "axes.axisbelow": True})

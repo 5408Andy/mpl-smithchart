@@ -23,6 +23,8 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
+.pdm.toml
+mpl_smithchart/_version.py
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -81,6 +83,7 @@ celerybeat-schedule
 # virtualenv
 venv/
 ENV/
+.venv/
 
 # Spyder project settings
 .spyderproject
@@ -90,3 +93,4 @@ ENV/
 
 # Pycharm project settings
 .idea
+.pdm-python
