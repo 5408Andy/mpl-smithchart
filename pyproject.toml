@@ -17,14 +17,14 @@ authors = [
     {name = "Paul Staerke", email = "paul.staerke@gmail.com"},
     {name = "Spencer Chang", email = "spencer@sycee.xyz"},
 ]
-requires-python = ">=3.7"
+requires-python = ">=3.8"
 dynamic = [
   "version",
 ]
 dependencies = [
     "matplotlib>=1.2",
-    "numpy>=1.21.1",
-    "scipy>=1.6.1",
+    "numpy>=1.24.3",
+    "scipy>=1.9.3",
 ]
 [project.urls]
 repository = "https://github.com/schang412/mpl-smithchart"
