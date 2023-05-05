@@ -756,7 +756,7 @@ class SmithAxes(Axes):
                     pass
 
             # if (converted) arg is an ndarray of complex type, split it
-            if isinstance(arg, np.ndarray) and arg.dtype in [np.complex, np.complex128]:
+            if isinstance(arg, np.ndarray) and arg.dtype in [complex, np.complex128]:
                 new_args += z_to_xy(arg)
             else:
                 new_args += (arg,)
@@ -1042,7 +1042,7 @@ class SmithAxes(Axes):
                     len_x, len_y = len(xticks) - 1, len(yticks) - 1
 
                     # 2. Step: calculate optimal gridspacing for each quadrant
-                    d_mat = np.ones((len_x, len_y, 2), dtype=np.int)
+                    d_mat = np.ones((len_x, len_y, 2), dtype=np.int32)
 
                     # TODO: optimize spacing algorithm
                     for i in range(len_x):
