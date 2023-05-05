@@ -1,5 +1,11 @@
-pySmithPlot
-===========
+# mpl-smithchart
+
+[![ci](https://github.com/schang412/mpl-smithchart/actions/workflows/ci.yml/badge.svg)](https://github.com/schang412/mpl-smithchart/actions/workflows/ci.yml)
+
+This project is forked from [pySmithPlot](https://github.com/vMeijin/pySmithPlot). It adds CI/CD automation to facilitate maintenance of the package.
+
+Below this line is the old README.
+---
 
 ## New Release of Version 0.2
 

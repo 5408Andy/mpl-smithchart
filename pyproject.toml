@@ -23,7 +23,7 @@ dynamic = [
 ]
 dependencies = [
     "matplotlib>=1.2",
-    "numpy==1.20",
+    "numpy>=1.21.1",
     "scipy>=1.6.1",
 ]
 [project.urls]
