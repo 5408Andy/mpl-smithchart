@@ -2,7 +2,15 @@
 
 [![ci](https://github.com/schang412/mpl-smithchart/actions/workflows/ci.yml/badge.svg)](https://github.com/schang412/mpl-smithchart/actions/workflows/ci.yml)
 
-This project is forked from [pySmithPlot](https://github.com/vMeijin/pySmithPlot). It adds CI/CD automation to facilitate maintenance of the package.
+This project is forked from [pySmithPlot](https://github.com/vMeijin/pySmithPlot).
+
+It adds/fixes the following:
+- CI/CD to facillitate package maintenance
+- addresses matplotlib deprecation warnings
+- updates numpy to newer version
+- fixes legend plotting
+- adds some automated testing of features
+- adds version lock file to show known-good build
 
 Below this line is the old README.
 ---
