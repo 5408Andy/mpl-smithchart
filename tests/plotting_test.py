@@ -31,3 +31,9 @@ def test_plot_s_param(mpl_figure):
     pp.plot(s11, markevery=1, datatype=SmithAxes.S_PARAMETER)
 
 
+def test_plot_labels(mpl_figure):
+    freqs = np.logspace(0, 9, 200)
+    s11 = (1-1j*freqs*1e-9)/(1+1j*freqs*1e-9)
+    pp.plot(s11, markevery=1, datatype=SmithAxes.S_PARAMETER, label='s11')
+    pp.legend()
+

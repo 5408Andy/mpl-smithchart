@@ -680,14 +680,14 @@ class SmithAxes(Axes):
                 xdescent, ydescent, width, height, fontsize,
                 trans,
             ):
-                legline, legline_marker = HandlerLine2D.create_artists(
+                legline = HandlerLine2D.create_artists(
                     self, legend, orig_handle, xdescent, ydescent,
                     width, height, fontsize, trans,
                 )
 
                 if hasattr(orig_handle, "_markerhacked"):
-                    this_axes._hack_linedraw(legline_marker, True)
-                return legline, legline_marker
+                    this_axes._hack_linedraw(legline[0], True)
+                return legline
 
         return Axes.legend(self, *args, handler_map={Line2D: SmithHandlerLine2D()}, **kwargs)
 
